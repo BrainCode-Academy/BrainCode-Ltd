@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Braincode — Learn. Build. Innovate. Grow.</title>
+    <meta
+      name="description"
+      content="Explore 200+ technologies, programming languages, frameworks, databases and developer tools on Braincode, a technology education platform by BrainCode Technology Limited."
+    />
+    <meta property="og:title" content="Braincode — Learn. Build. Innovate. Grow." />
+    <meta
+      property="og:description"
+      content="Learn software engineering, practise with real code, explore 200+ technologies, build projects, and grow your developer portfolio on Braincode by BrainCode Technology Limited."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Braincode — Learn. Build. Innovate. Grow." />
+    <meta
+      name="twitter:description"
+      content="Technology education, coding courses, interactive labs, and developer collaboration by BrainCode Technology Limited."
+    />
+    <link
+      id="dynamic-favicon"
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A84FF'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='32' fill='white'%3EB%3C/text%3E%3C/svg%3E"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Braincode",
+        "slogan": "Learn. Build. Innovate. Grow.",
+        "description": "Technology education, interactive coding, developer communities, and project portfolio platform by BrainCode Technology Limited.",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "BrainCode Technology Limited"
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('bc_theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#05070A] dark:text-white antialiased selection:bg-[#0A84FF]/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

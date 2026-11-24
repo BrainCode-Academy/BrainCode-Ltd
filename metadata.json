@@ -1,0 +1,6 @@
+{
+  "name": "Braincode",
+  "description": "Learn. Build. Innovate. Grow. Integrated coding education, 200+ technology directory, interactive coding workspace, AI tutoring, developer communities, and portfolio platform by BrainCode Technology Limited.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

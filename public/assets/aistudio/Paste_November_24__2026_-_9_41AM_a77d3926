@@ -1,0 +1,1317 @@
+# PHASE 26 — COMPLETE PROFESSIONAL UI/UX REDESIGN, DESIGN SYSTEM REFINEMENT & RESPONSIVE EXPERIENCE OVERHAUL
+
+## PROJECT CONTEXT
+
+We are continuing development of the existing BrainCode Academy platform.
+
+**Product:** BrainCode Academy  
+**Company:** BrainCode Technology Limited  
+**Tagline:** Learn. Build. Innovate. Grow.
+
+**Existing technology stack:**
+- React 19
+- Vite
+- TypeScript
+- Tailwind CSS v4
+- Express
+- WebSockets
+- SQLite (`node:sqlite`)
+- Existing authentication and application APIs
+
+The platform already contains substantial functionality, including:
+
+- User authentication and onboarding.
+- Technology catalogue.
+- Learning paths.
+- Technology learning centres.
+- Courses, modules and lessons.
+- Lesson outlines and navigation.
+- Interactive code editor.
+- Code preview.
+- Practice environments and discipline-specific labs.
+- Exercises and assessments.
+- Projects and assignments.
+- Learner progress tracking.
+- Certificates.
+- Subscriptions and entitlements.
+- Notifications.
+- Admin Portal.
+- Instructor Portal.
+- Curriculum management.
+- Content authoring.
+- Curriculum quality reports.
+- Existing backend services and database integrations.
+
+Phase 25 introduced improvements to typography, navigation, lesson presentation, progress tracking, and beginner usability.
+
+However, the visual presentation still needs significant professional refinement.
+
+The current design has some characteristics commonly associated with AI-generated interfaces:
+
+- Too many coloured cards.
+- Excessive box outlines.
+- Too many competing background colours.
+- Excessive gradients.
+- Unnecessary decorative effects.
+- Inconsistent spacing.
+- Poor alignment between components.
+- Different sections using inconsistent visual styles.
+- Desktop layouts that do not adapt elegantly to smaller screens.
+- Mobile layouts that feel squeezed, unbalanced, or poorly arranged.
+
+We need to address these problems systematically.
+
+---
+
+# 1. PRIMARY OBJECTIVE
+
+Perform a complete professional visual and responsive redesign of the existing BrainCode Academy platform.
+
+This is a comprehensive UI/UX refinement, not a superficial colour change.
+
+The final interface must look like a carefully designed, professionally maintained educational technology product.
+
+The design should be:
+
+- Professional.
+- Minimal.
+- Modern.
+- Clean.
+- Consistent.
+- Balanced.
+- Intuitive.
+- Educational.
+- Accessible.
+- Responsive.
+- Comfortable to use for long learning sessions.
+
+The platform should not look like a generic AI-generated dashboard or a collection of unrelated UI templates.
+
+The most important objective is to improve both appearance and usability.
+
+A beginner should be able to navigate the platform comfortably without feeling overwhelmed.
+
+---
+
+# 2. CONDUCT A COMPLETE APPLICATION DESIGN AUDIT
+
+Before changing code, inspect the entire existing application.
+
+Do not redesign only the homepage.
+
+Inspect:
+
+1. Public homepage.
+2. Header and navigation.
+3. Technology catalogue.
+4. Technology selection.
+5. Technology learning centres.
+6. Lesson pages.
+7. Lesson outlines.
+8. Learning workspace.
+9. Code editor.
+10. Code preview.
+11. Practice environments.
+12. Exercises.
+13. Quizzes.
+14. Assessments.
+15. Projects.
+16. Learning paths.
+17. Courses and modules.
+18. Study plans.
+19. Certificates.
+20. Learner dashboard.
+21. Login.
+22. Registration.
+23. Onboarding.
+24. Profile.
+25. Settings.
+26. Notifications.
+27. Subscription interfaces.
+28. Admin dashboard.
+29. Instructor dashboard.
+30. Curriculum management.
+31. Content authoring.
+32. Quality reports.
+33. Tables.
+34. Forms.
+35. Modals.
+36. Drawers.
+37. Popovers.
+38. Loading states.
+39. Empty states.
+40. Error states.
+41. Mobile navigation.
+42. Footer.
+43. All other major screens and reusable components.
+
+Identify:
+
+- Unnecessary cards.
+- Nested cards.
+- Excessive borders.
+- Coloured outlines.
+- Unnecessary gradients.
+- Glowing effects.
+- Excessive shadows.
+- Inconsistent corner radii.
+- Excessive badges.
+- Excessive pills.
+- Inconsistent icons.
+- Poor typography hierarchy.
+- Inconsistent page widths.
+- Uneven spacing.
+- Misaligned headings.
+- Misaligned buttons.
+- Awkward text wrapping.
+- Overcrowded toolbars.
+- Poor content grouping.
+- Excessive empty space.
+- Mobile overflow.
+- Overlapping elements.
+- Components that become too narrow on mobile.
+- Desktop components that stack unnecessarily.
+- Poorly positioned fixed elements.
+- Navigation problems.
+- Unbalanced responsive layouts.
+
+Identify the root causes before implementing fixes.
+
+Create an internal audit of the problems and address them systematically.
+
+---
+
+# 3. ESTABLISH A NEW PROFESSIONAL VISUAL DIRECTION
+
+Create a unified visual identity across the entire platform.
+
+## Design philosophy
+
+Use a restrained professional software design language.
+
+The interface should feel like a mature educational technology product, not an experimental AI dashboard.
+
+### Avoid the stereotypical AI-generated appearance
+
+Do not overuse:
+
+- Purple-to-blue gradients.
+- Bright gradient backgrounds.
+- Glowing borders.
+- Neon outlines.
+- Glassmorphism.
+- Decorative blobs.
+- Floating abstract shapes.
+- Excessive shadows.
+- Rounded cards everywhere.
+- Coloured cards everywhere.
+- Cards inside cards.
+- Large meaningless icons.
+- Excessive emojis.
+- Excessive badges.
+- Excessive animations.
+- Unnecessary decorative sections.
+- Coloured outlines around every component.
+
+Do not make every component look special.
+
+Professional interfaces use visual hierarchy and consistency rather than decoration everywhere.
+
+### Desired appearance
+
+Use:
+
+- Clean backgrounds.
+- Carefully selected accent colours.
+- Neutral surfaces.
+- Consistent typography.
+- Purposeful spacing.
+- Clear visual hierarchy.
+- Subtle dividers.
+- Restrained borders.
+- Balanced layouts.
+- Functional grouping.
+- Clear interactive states.
+
+The result should feel natural, credible, and professionally designed.
+
+---
+
+# 4. REDESIGN THE GLOBAL COLOUR SYSTEM
+
+Audit the current BrainCode colour palette and create a consistent global colour system.
+
+Use a professional neutral foundation.
+
+Preferred foundation:
+
+- White and subtle warm-neutral surfaces.
+- Light neutral backgrounds where appropriate.
+- Dark charcoal primary text.
+- Medium gray secondary text.
+- Muted gray supporting text.
+- Subtle neutral dividers.
+- Restrained brand accent colours.
+
+Do not introduce unnecessary new brand colours.
+
+Preserve the existing BrainCode identity while refining its application.
+
+## Create reusable colour tokens
+
+Define consistent tokens for:
+
+- Primary background.
+- Secondary background.
+- Surface.
+- Elevated surface.
+- Primary text.
+- Secondary text.
+- Muted text.
+- Border.
+- Divider.
+- Primary brand colour.
+- Primary hover state.
+- Focus state.
+- Success.
+- Warning.
+- Error.
+- Information.
+- Disabled state.
+
+### Colour application rules
+
+- Primary buttons should use the consistent brand colour.
+- Secondary buttons should use neutral styling.
+- Destructive actions should use danger styling.
+- Success states should use success styling.
+- Warning messages should use warning styling.
+- Information messages should use information styling.
+- Disabled elements should look disabled without becoming unreadable.
+
+Avoid giving every section its own colour.
+
+Avoid placing a coloured background behind every group of content.
+
+Use colour to communicate meaning and hierarchy.
+
+## Border and outline refinement
+
+The existing coloured box outlines make parts of the application look artificial.
+
+Reduce unnecessary outlines.
+
+Use borders only where they provide useful separation.
+
+Examples:
+
+- Input fields.
+- Selected navigation items.
+- Code editor boundaries.
+- Functional workspace panels.
+- Table separators when needed.
+- Dialog boundaries.
+- Meaningful content divisions.
+
+Use subtle, consistent neutral borders.
+
+Do not use a different border colour for every card.
+
+Do not place borders around every paragraph, lesson section, or list.
+
+---
+
+# 5. REDUCE EXCESSIVE CARDS AND BOXES
+
+Perform a complete card-usage audit.
+
+Not every section needs to be inside a card.
+
+Cards should represent meaningful independent objects or interactions.
+
+Appropriate examples:
+
+- Technology cards.
+- Course cards.
+- Project cards.
+- Independent learning resources.
+- Important dashboard summaries.
+- Distinct interactive tools.
+
+Cards are often unnecessary for:
+
+- Paragraphs.
+- Lesson explanations.
+- Learning objectives.
+- Simple lists.
+- Navigation links.
+- Instructions.
+- Statistics.
+- Consecutive lesson content.
+- Simple information sections.
+
+Where possible, replace unnecessary cards with:
+
+- Typography.
+- Whitespace.
+- Section headings.
+- Divider lines.
+- Structured lists.
+- Clear content grouping.
+
+Avoid excessive nested structures such as:
+
+CARD
+  CARD
+    CARD
+      CONTENT
+
+The user should not feel that every piece of information is trapped inside a box.
+
+Create a natural visual flow between sections.
+
+---
+
+# 6. GLOBAL SPACING, ALIGNMENT AND GRID SYSTEM
+
+One of the biggest problems is inconsistent alignment.
+
+Establish a reusable layout and spacing system.
+
+Create a consistent spacing scale rather than using arbitrary spacing values throughout the application.
+
+Review:
+
+- Page padding.
+- Content width.
+- Section spacing.
+- Heading margins.
+- Paragraph spacing.
+- Form spacing.
+- Button spacing.
+- Navigation spacing.
+- Sidebar spacing.
+- Card spacing.
+- Toolbar spacing.
+- Footer spacing.
+
+## Container system
+
+Establish appropriate container sizes for different content types.
+
+For example:
+
+- Narrow containers for reading and lesson content.
+- Medium containers for forms and focused tasks.
+- Wide containers for dashboards and technology catalogues.
+- Flexible full-width containers for code editors and professional workspaces.
+
+Do not force all pages into the same maximum width.
+
+## Alignment rules
+
+Ensure:
+
+- Page headings align with their content.
+- Buttons align naturally with headings and controls.
+- Forms use consistent label alignment.
+- Tables align correctly.
+- Navigation items are vertically aligned.
+- Icons align with their accompanying text.
+- Content follows a consistent vertical rhythm.
+- Page headers do not have awkward spacing.
+- Components do not randomly shift between pages.
+- Sections have consistent left and right boundaries.
+
+Use proper CSS Grid and Flexbox layouts.
+
+Avoid unnecessary absolute positioning and arbitrary pixel offsets.
+
+---
+
+# 7. COMPLETE RESPONSIVE DESIGN REFINEMENT
+
+This is one of the highest-priority parts of Phase 26.
+
+The current interface may resize technically, but some layouts are not visually balanced or properly organised on smaller screens.
+
+Do not simply shrink desktop layouts.
+
+Design responsive behaviour intentionally.
+
+## Desktop targets
+
+Test:
+
+- 1440 × 900.
+- 1280 × 800.
+- 1024 × 768.
+
+Desktop requirements:
+
+- Use screen space intelligently.
+- Maintain balanced sidebars and content.
+- Avoid excessively wide reading areas.
+- Avoid compressed main content.
+- Use multi-column layouts where appropriate.
+- Keep important content prominent.
+- Avoid unnecessary empty space.
+- Prevent overcrowded navigation.
+- Keep controls aligned.
+
+## Tablet targets
+
+Test:
+
+- 900 × 1000.
+- 820 × 1180.
+- 768 × 1024.
+
+Tablet requirements:
+
+- Adapt navigation appropriately.
+- Reposition or collapse sidebars.
+- Adjust column counts.
+- Reorganise controls.
+- Prevent content compression.
+- Avoid overflow.
+- Maintain consistent spacing.
+- Avoid awkward desktop layouts that are only partially collapsed.
+
+## Mobile targets
+
+Test:
+
+- 430 × 932.
+- 414 × 896.
+- 390 × 844.
+- 375 × 812.
+- 360 × 800.
+- 320 × 700.
+
+Mobile is not an afterthought.
+
+Every major interface must be usable and visually balanced on mobile.
+
+### Mobile acceptance requirements
+
+Ensure:
+
+- No unintended horizontal scrolling.
+- No clipped content.
+- No overlapping elements.
+- No tiny buttons.
+- No unnecessarily oversized controls.
+- No awkwardly stretched cards.
+- No extremely narrow text areas.
+- No text squeezed between controls.
+- No desktop sidebars consuming the screen.
+- No overlapping navigation.
+- No forms exceeding viewport width.
+- No content hidden accidentally.
+- No huge decorative elements wasting screen space.
+- No excessive empty space.
+- No inconsistent page padding.
+
+### Mobile-specific layout behaviour
+
+Desktop:
+
+Header  
+Title and actions  
+Sidebar and main content
+
+Mobile:
+
+Header  
+Title  
+Actions  
+Main content  
+Sidebar available through an appropriate drawer or navigation control.
+
+Desktop three-column layouts should become intelligently ordered mobile layouts.
+
+Inline desktop filters should become compact mobile controls or expandable filter sections.
+
+Tables should use the most appropriate mobile presentation:
+
+- Responsive tables with intentional horizontal scrolling.
+- Reorganised compact lists.
+- Alternative structured data layouts.
+
+Do not blindly convert every table into cards.
+
+### Mobile spacing
+
+Review and refine:
+
+- Page padding.
+- Section spacing.
+- Heading spacing.
+- Button spacing.
+- Form spacing.
+- Navigation spacing.
+- Footer spacing.
+- Text line lengths.
+- Drawer dimensions.
+- Toolbar spacing.
+
+Mobile should feel compact, comfortable, and professionally arranged.
+
+Do not copy desktop spacing directly onto mobile.
+
+---
+
+# 8. REDESIGN THE LEARNING EXPERIENCE
+
+The learning experience is the core product of BrainCode Academy.
+
+Preserve the simplified Phase 25 learning journey:
+
+Technology → Learning Centre → Lesson → Learn → Example → Practice → Knowledge Check → Next Lesson.
+
+Do not make learning more complicated.
+
+## Lesson interface
+
+Review:
+
+- Lesson header.
+- Lesson title.
+- Lesson navigation.
+- Lesson progress.
+- Lesson outline.
+- Main teaching content.
+- Code examples.
+- Practice controls.
+- Knowledge checks.
+- Previous and next lesson navigation.
+
+### Desired lesson hierarchy
+
+1. Lesson navigation.
+2. Lesson title and context.
+3. Learning objectives.
+4. Teaching content.
+5. Examples.
+6. Practice.
+7. Knowledge check.
+8. Lesson completion.
+9. Next lesson.
+
+Avoid unnecessary coloured containers around every section.
+
+The lesson should feel like a professional digital textbook combined with an interactive learning environment.
+
+### Reading experience
+
+Ensure:
+
+- Comfortable line length.
+- Readable font size.
+- Consistent heading hierarchy.
+- Appropriate paragraph spacing.
+- Well-formatted lists.
+- Clear code examples.
+- Consistent inline code.
+- Properly differentiated notes and warnings.
+- Good readability on mobile.
+
+Preserve the existing Phase 25 typography:
+
+- Inter for body and interface text.
+- Manrope for headings.
+- JetBrains Mono for code.
+
+Do not replace the font system without a clear reason.
+
+---
+
+# 9. PRACTICE WORKSPACE AND CODE EDITOR REFINEMENT
+
+Review the existing:
+
+- Code editor.
+- Preview.
+- Whiteboard.
+- Workspace tabs.
+- Practice controls.
+- Toolbars.
+- Language selector.
+- Execution controls.
+
+Do not remove functionality.
+
+Improve:
+
+- Editor and preview separation.
+- Panel sizing.
+- Tab presentation.
+- Toolbar alignment.
+- Control organisation.
+- Run and reset buttons.
+- Editor readability.
+- Responsive behaviour.
+
+Avoid excessive coloured outlines.
+
+Avoid overcrowded toolbars.
+
+### Mobile workspace
+
+Do not force the desktop editor and preview into side-by-side panels when they become unusable.
+
+Create a deliberate mobile experience.
+
+For example:
+
+- Code.
+- Preview.
+- Instructions.
+
+Allow users to switch between these areas easily.
+
+Ensure code editing remains usable on small screens.
+
+Preserve the existing execution tools, sandbox behaviour, and honest runtime limitations.
+
+---
+
+# 10. NAVIGATION REDESIGN
+
+Audit the entire navigation system.
+
+Navigation must be:
+
+- Simple.
+- Predictable.
+- Consistent.
+- Accessible.
+- Responsive.
+
+Ensure:
+
+- Primary navigation is clearly distinguished.
+- Secondary navigation is grouped appropriately.
+- Active states are easy to identify.
+- Mobile navigation is easy to open and close.
+- Drawers behave correctly.
+- Popovers remain within the viewport.
+- Navigation does not obscure content.
+- Users can understand their current location.
+
+Avoid excessive navigation items.
+
+Do not introduce unnecessary menus or additional learning steps.
+
+---
+
+# 11. STANDARDISE REUSABLE COMPONENTS
+
+Review and standardise the reusable components across the application.
+
+Components include:
+
+- Buttons.
+- Inputs.
+- Selects.
+- Textareas.
+- Tabs.
+- Navigation.
+- Dialogs.
+- Drawers.
+- Popovers.
+- Tooltips.
+- Alerts.
+- Notifications.
+- Empty states.
+- Loading states.
+- Error states.
+- Progress indicators.
+- Tables.
+- Section headings.
+- Page headers.
+- Badges.
+- Breadcrumbs.
+
+All components should follow consistent:
+
+- Typography.
+- Sizing.
+- Spacing.
+- Colour.
+- Border treatment.
+- Corner radius.
+- Interaction states.
+- Responsive behaviour.
+
+## Button hierarchy
+
+Create consistent variants:
+
+1. Primary.
+2. Secondary.
+3. Tertiary or ghost.
+4. Destructive.
+5. Icon-only.
+
+Do not make every button a brightly coloured pill.
+
+Use pill-shaped buttons only where appropriate.
+
+## Border radius
+
+Create a controlled radius scale.
+
+Do not use excessive rounded corners on every component.
+
+## Shadows
+
+Use shadows sparingly.
+
+Shadows should communicate elevation, not decorate every element.
+
+---
+
+# 12. PUBLIC HOMEPAGE REFINEMENT
+
+Make the public homepage look like a credible professional educational technology product.
+
+Avoid an overly promotional, AI-generated landing page.
+
+Improve:
+
+- Hero section.
+- Value proposition.
+- Navigation.
+- Primary call to action.
+- Technology catalogue.
+- Beginner entry points.
+- Feature presentation.
+- Content sections.
+- Footer.
+- Responsive behaviour.
+
+Ensure:
+
+1. Visitors understand what BrainCode Academy is.
+2. Visitors understand what they can learn.
+3. Visitors know how to begin.
+4. Visitors can easily find the technology they want.
+
+Keep the existing HTML quick-start entry point introduced in Phase 25.
+
+Do not overload the homepage with unnecessary cards, statistics, badges, gradients, or decorative sections.
+
+Maintain a clear visual hierarchy.
+
+---
+
+# 13. ADMIN AND INSTRUCTOR PORTAL REFINEMENT
+
+The administrative interfaces also require professional design.
+
+Review:
+
+- Admin dashboard.
+- Instructor dashboard.
+- Curriculum management.
+- Lesson management.
+- Content editor.
+- User management.
+- Tables.
+- Search and filters.
+- Forms.
+- Quality reports.
+- Data summaries.
+- Dialogs.
+- Navigation.
+
+Admin interfaces should prioritise information density and productivity.
+
+Avoid oversized decorative cards.
+
+Tables must remain readable and usable.
+
+Ensure:
+
+- Consistent columns.
+- Proper spacing.
+- Clear action buttons.
+- Readable status indicators.
+- Responsive behaviour.
+- Appropriate form layouts.
+- Professional data presentation.
+
+Keep the Admin Portal and Instructor Portal clearly separated from the learner experience.
+
+Do not make administrative interfaces look like marketing pages.
+
+---
+
+# 14. ACCESSIBILITY AND INTERACTION QUALITY
+
+Improve accessibility throughout the application.
+
+Ensure:
+
+- Appropriate colour contrast.
+- Keyboard navigation.
+- Visible focus indicators.
+- Accessible form labels.
+- Semantic headings.
+- Accessible buttons.
+- Accessible dialogs.
+- Accessible drawers.
+- Screen-reader-friendly controls.
+- Appropriate touch target sizes.
+- Reduced-motion support.
+
+Do not communicate important information through colour alone.
+
+---
+
+# 15. ANIMATION AND MICRO-INTERACTIONS
+
+Use animation sparingly.
+
+Remove unnecessary:
+
+- Floating effects.
+- Pulsing effects.
+- Glowing effects.
+- Excessive hover animations.
+- Constant movement.
+- Decorative transitions.
+
+Use animation only where it improves usability.
+
+Appropriate examples:
+
+- Drawer opening.
+- Dropdown opening.
+- Tab switching.
+- Subtle hover feedback.
+- Loading indicators.
+- Progress transitions.
+
+Respect reduced-motion preferences.
+
+---
+
+# 16. IMPLEMENT A MAINTAINABLE DESIGN SYSTEM
+
+Use the existing Tailwind CSS v4 and CSS architecture.
+
+Create reusable global design tokens for:
+
+- Colours.
+- Typography.
+- Spacing.
+- Container widths.
+- Border radii.
+- Shadows.
+- Focus states.
+- Responsive layout patterns.
+
+Avoid scattering arbitrary colours and styling decisions throughout hundreds of components.
+
+Use the existing architecture wherever possible.
+
+Do not introduce unnecessary dependencies.
+
+Do not introduce paid services or paid AI APIs for this visual redesign.
+
+---
+
+# 17. IMPLEMENTATION STRATEGY
+
+Work systematically.
+
+### Step 1: Audit
+
+Inspect the current application and identify the main design problems.
+
+### Step 2: Design system
+
+Establish the global colour, typography, spacing, border, radius, shadow, and layout tokens.
+
+### Step 3: Shared components
+
+Refine shared components first to ensure consistency.
+
+### Step 4: Public experience
+
+Improve homepage, technology catalogue, and public learning centres.
+
+### Step 5: Learning experience
+
+Improve lesson pages, outlines, teaching content, and practice workspace.
+
+### Step 6: Learner dashboard
+
+Refine dashboard, progress, profile, settings, and notifications.
+
+### Step 7: Admin and instructor
+
+Improve administrative workflows and data interfaces.
+
+### Step 8: Responsive refinement
+
+Test and correct desktop, tablet, and mobile layouts.
+
+### Step 9: Regression testing
+
+Ensure all existing functionality continues to work.
+
+### Step 10: Final visual audit
+
+Capture screenshots and inspect actual rendered results.
+
+Correct remaining problems before declaring completion.
+
+---
+
+# 18. STRICT PRESERVATION REQUIREMENTS
+
+This is an existing production-oriented application.
+
+You must improve its presentation without destroying its existing architecture or functionality.
+
+DO NOT:
+
+- Rebuild the application from scratch.
+- Replace the framework.
+- Reset the database.
+- Delete users.
+- Delete curriculum.
+- Delete lessons.
+- Delete courses.
+- Delete modules.
+- Delete certificates.
+- Reset learner progress.
+- Break authentication.
+- Break Google sign-in.
+- Break APIs.
+- Break subscriptions.
+- Break entitlements.
+- Break Admin Portal.
+- Break Instructor Portal.
+- Remove code editor.
+- Remove preview.
+- Remove whiteboard.
+- Remove practice labs.
+- Remove learning tools.
+- Remove existing teaching content.
+- Remove responsive functionality.
+- Introduce unnecessary paid dependencies.
+- Require paid AI APIs.
+- Deploy the application.
+
+Preserve existing records, relationships, routes, services, APIs, and data structures.
+
+Refactor incrementally.
+
+Before changing a shared component, inspect all places where it is used.
+
+A visual change to a shared component must not unexpectedly break another part of the platform.
+
+---
+
+# 19. RESPONSIVE SCREENSHOT AND VISUAL TESTING
+
+Do not rely only on build success or computed CSS styles.
+
+Capture actual screenshots and inspect the rendered interfaces.
+
+Use Playwright if available.
+
+## Required viewport sizes
+
+Desktop:
+- 1440 × 900.
+- 1280 × 800.
+- 1024 × 768.
+
+Tablet:
+- 900 × 1000.
+- 820 × 1180.
+- 768 × 1024.
+
+Mobile:
+- 430 × 932.
+- 414 × 896.
+- 390 × 844.
+- 375 × 812.
+- 360 × 800.
+- 320 × 700.
+
+## Required pages for inspection
+
+1. Homepage.
+2. Technology catalogue.
+3. HTML learning centre.
+4. HTML Lesson 01.
+5. HTML Lesson 02.
+6. Lesson outline.
+7. Practice workspace.
+8. Code editor.
+9. Preview.
+10. Exercise interface.
+11. Quiz interface.
+12. Learner dashboard.
+13. Login.
+14. Registration.
+15. Profile and settings.
+16. Admin dashboard.
+17. Curriculum management.
+18. Content editor.
+19. Curriculum quality report.
+20. Tables and forms.
+
+## Visual inspection checklist
+
+For each relevant page, check:
+
+- Is the content properly aligned?
+- Is spacing consistent?
+- Is the layout balanced?
+- Is the page too crowded?
+- Is the page too empty?
+- Are colours restrained?
+- Are borders subtle?
+- Are cards being overused?
+- Are text sizes appropriate?
+- Are buttons aligned?
+- Are headings readable?
+- Does mobile look intentionally designed?
+- Are there awkward line breaks?
+- Is horizontal scrolling present?
+- Are elements overlapping?
+- Are controls accessible?
+- Are forms usable?
+- Are tables readable?
+- Does the page feel professional?
+
+Do not claim visual verification merely because automated tests pass.
+
+If screenshot capture is available, use it.
+
+If visual inspection cannot be completed for a particular screen, clearly disclose that limitation.
+
+---
+
+# 20. FUNCTIONAL REGRESSION TESTING
+
+After the redesign, verify that existing features still work.
+
+Test:
+
+- Login.
+- Registration.
+- Google authentication.
+- Learning navigation.
+- Lesson opening.
+- Lesson completion.
+- Progress persistence.
+- Previous and next lessons.
+- Unrestricted lesson outline navigation.
+- Code editor.
+- Code preview.
+- Exercises.
+- Quizzes.
+- Assessments.
+- Practice labs.
+- Whiteboard.
+- Learning paths.
+- Projects.
+- Certificates.
+- Notifications.
+- Admin functions.
+- Instructor functions.
+- Curriculum CMS.
+- Search.
+- Mobile navigation.
+
+Run:
+
+- Production build.
+- TypeScript checks.
+- Backend tests.
+- Existing Playwright tests.
+- Responsive E2E tests.
+
+Fix regressions before completing the phase.
+
+---
+
+# 21. FINAL PROFESSIONAL QUALITY REVIEW
+
+Conduct a second audit after implementation.
+
+Compare the original interface against the refined version.
+
+Evaluate:
+
+- Professional appearance.
+- Colour consistency.
+- Typography.
+- Spacing.
+- Alignment.
+- Layout balance.
+- Border usage.
+- Card usage.
+- Desktop responsiveness.
+- Tablet responsiveness.
+- Mobile responsiveness.
+- Navigation.
+- Accessibility.
+- Beginner friendliness.
+- Learning experience.
+
+If some screens still look inconsistent, correct them.
+
+Do not stop after redesigning only a few prominent pages.
+
+The design language must be consistent across the entire application.
+
+---
+
+# 22. REQUIRED IMPLEMENTATION REPORT
+
+At completion, provide a detailed report.
+
+## A. Initial audit
+
+What were the major visual and responsive problems?
+
+## B. Design system
+
+Explain the new:
+
+- Colour palette.
+- Typography system.
+- Spacing system.
+- Border system.
+- Radius system.
+- Shadow system.
+- Container and layout system.
+
+## C. Pages modified
+
+List the actual pages and components changed.
+
+## D. AI-looking design elements removed or reduced
+
+Explain where you reduced:
+
+- Excessive cards.
+- Nested boxes.
+- Coloured outlines.
+- Gradients.
+- Glowing effects.
+- Shadows.
+- Decorative elements.
+
+## E. Alignment and spacing improvements
+
+Describe the major corrections.
+
+## F. Responsive improvements
+
+Explain what changed on desktop, tablet, and mobile.
+
+## G. Screenshot verification
+
+List the pages and viewport sizes actually captured and visually inspected.
+
+## H. Functional testing
+
+Report actual results for:
+
+- Build.
+- TypeScript.
+- Backend tests.
+- E2E tests.
+- Responsive tests.
+
+## I. Files changed
+
+List the important files modified.
+
+## J. Remaining issues
+
+List anything incomplete, unverified, or requiring further work.
+
+## K. Preservation confirmation
+
+Explicitly confirm that existing:
+
+- Database records.
+- User accounts.
+- Curriculum.
+- Courses.
+- Lessons.
+- Certificates.
+- Learner progress.
+- APIs.
+- Authentication.
+- Subscriptions.
+- Core functionality.
+
+were preserved.
+
+Do not make claims about tests or visual inspection that were not actually performed.
+
+---
+
+# 23. FINAL ACCEPTANCE CRITERIA
+
+Phase 26 is complete only when:
+
+1. The entire application follows a consistent professional design system.
+2. The interface no longer has an excessive AI-generated card aesthetic.
+3. Colours are restrained and consistent.
+4. Borders are subtle and purposeful.
+5. Gradients and glow effects are not overused.
+6. Typography is consistent.
+7. Spacing is intentional.
+8. Alignment is consistent.
+9. Desktop layouts are balanced.
+10. Tablet layouts are balanced.
+11. Mobile layouts are properly articulated.
+12. Major screens work at 320px and above.
+13. No unintended horizontal overflow remains.
+14. Navigation works correctly.
+15. Lesson content remains readable.
+16. Practice tools remain usable.
+17. Admin and instructor interfaces remain functional.
+18. Existing features and data are preserved.
+19. Production build succeeds.
+20. TypeScript checks pass.
+21. Existing tests pass.
+22. Responsive tests pass.
+23. Screenshots have been visually inspected.
+24. Remaining limitations are documented honestly.
+
+# FINAL INSTRUCTION
+
+Treat Phase 26 as a serious professional redesign of the existing BrainCode Academy product.
+
+Do not simply change the theme.
+
+Do not simply make every card white.
+
+Do not just reduce border colours.
+
+Understand why the existing interface looks artificial, unbalanced, and inconsistent, then fix the underlying design and layout problems.
+
+The final result should look like a carefully designed professional educational technology platform that a real software product team would proudly release.
+
+The experience must be equally thoughtful on desktop, tablet, and mobile.
+
+Most importantly, the platform must become easier and more comfortable for beginners to use.
+
+**Audit first. Establish the design system. Refine shared components. Improve every major interface. Test all screen sizes. Inspect actual screenshots. Correct defects. Preserve the complete existing platform.**
+
+Do not deploy. I will handle deployment myself.

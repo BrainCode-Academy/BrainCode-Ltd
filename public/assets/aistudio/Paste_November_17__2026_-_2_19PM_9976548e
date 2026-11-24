@@ -1,0 +1,1799 @@
+# MASTER BUILD PROMPT — BCSCHOOLS
+## Complete Full-Stack Learning, Development, AI, Community, Collaboration and Subscription Platform
+
+**Project name:** BCschools  
+**Brand/Organization:** BrainCode Technology Limited  
+**Project status:** Active development  
+**Product name:** BCschools is a provisional working name and may change later. Keep the application name, logo, branding and metadata configurable so the product can be renamed without restructuring the application.
+
+---
+
+# 1. YOUR ROLE AND PRIMARY OBJECTIVE
+
+Act as a senior full-stack software architect, product designer, UI/UX designer, database engineer, security engineer and experienced software developer.
+
+I want you to BUILD a complete, modern, responsive and scalable web application called **BCschools**.
+
+This is not just a traditional Learning Management System (LMS), a course website, a coding tutorial website or a social network.
+
+BCschools is an integrated digital learning and technology ecosystem that combines:
+
+1. Structured online learning and education.
+2. Interactive coding and practical development.
+3. Assignments, quizzes and assessments.
+4. AI-powered learning assistance.
+5. Developer communities and social networking.
+6. Private messaging and real-time communication.
+7. Collaborative coding and shared workspaces.
+8. Personal learning dashboards and progress tracking.
+9. Developer portfolios and project showcases.
+10. Technical documentation and learning resources.
+11. Monthly and yearly premium subscriptions.
+12. Payment processing and centralized feature access.
+13. Instructor, content management and administrative systems.
+
+All these modules must work together under one user account and one connected platform.
+
+**Your objective is to implement the actual application, including frontend, backend architecture, database integration, authentication, APIs, permissions and business logic. Do not stop at static screens or a visual prototype.**
+
+Before writing code, inspect the available project environment and existing files. If an existing project is present, preserve working functionality and build on it instead of unnecessarily replacing everything.
+
+If the environment has limitations, explain them and implement the strongest functional version possible without pretending that unavailable integrations are operational.
+
+---
+
+# 2. TECHNOLOGY STACK AND DEVELOPMENT RULES
+
+Use the following primary stack:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion for animations
+- Lucide React for icons
+
+Use the Next.js App Router where supported.
+
+Keep the code modular, reusable, maintainable and production-oriented.
+
+### Development requirements
+
+- Use reusable components.
+- Separate frontend, backend, services, database access and business logic.
+- Use server-side validation for sensitive operations.
+- Use protected routes and API endpoints.
+- Use environment variables for secrets and configuration.
+- Never expose secret keys in frontend code.
+- Implement proper loading, error, success, empty and locked states.
+- Use pagination for large lists.
+- Use responsive layouts.
+- Implement proper form validation.
+- Avoid unnecessary dependencies. Framer Motion and Lucide React are the approved animation and icon libraries. Add other packages only when genuinely required for application functionality.
+- Do not leave important buttons or navigation links non-functional.
+- Do not use hardcoded fake payment success, fake authentication or fake premium access.
+- Do not hardcode subscription prices or provider credentials.
+
+If a service requires external credentials, create its integration structure, environment variable documentation and setup instructions. Clearly distinguish a working integration from a placeholder or development simulation.
+
+---
+
+# 3. PRODUCT VISION AND CORE PRINCIPLES
+
+BCschools should create an environment where people can:
+
+- Learn technology and other approved subjects.
+- Follow structured courses and learning paths.
+- Practise what they learn.
+- Build real-world projects.
+- Receive intelligent explanations and feedback.
+- Connect with other learners and professionals.
+- Join professional communities.
+- Collaborate on development projects.
+- Build a professional developer portfolio.
+- Track their actual learning progress and skills.
+
+The platform must follow these principles:
+
+1. Personalized learning based on user interests and performance.
+2. Intelligent feedback that explains mistakes.
+3. Structured learning paths and career-oriented tracks.
+4. Real-world projects and practical learning.
+5. Measure demonstrated skills, not just lesson completion.
+6. Support mentorship and peer-to-peer learning.
+7. Provide interactive coding tools.
+8. Maintain quality-controlled and regularly updated content.
+9. Encourage professional connections and collaboration.
+10. Keep basic learning accessible without forcing every user to pay.
+
+The application must be modular, with one shared account, dashboard, permission system, notification system and data layer.
+
+---
+
+# 4. BRANDING AND GLOBAL DESIGN SYSTEM
+
+Create a premium, modern, technology-focused visual identity.
+
+The design should feel like a combination of a professional learning platform, developer environment and modern SaaS application.
+
+### Main visual direction
+
+- Deep dark backgrounds.
+- Modern navy and blue tones.
+- Electric blue and cyan accents.
+- White and cool-grey surfaces.
+- Subtle gradients.
+- Glass effects where appropriate.
+- Clean typography.
+- Smooth transitions.
+- Professional icons.
+- Clear visual hierarchy.
+- Consistent spacing and rounded components.
+
+Use the following as starting design tokens:
+
+- Main dark background: `#05070A`
+- Primary blue: `#0A84FF`
+- Cyan accent: `#00D4FF`
+- Dark blue: `#102040`
+- Orange accent for selected highlights: `#FF6B35`
+- White: `#FFFFFF`
+
+Use dark and light themes where appropriate. The authentication screen should retain the exact dark glass-style visual direction described in Section 5.
+
+Do not make every screen visually identical. The public website, learner dashboard, learning environment, coding editor and admin portal should have layouts appropriate to their functions while maintaining one consistent design system.
+
+### Global navigation
+
+Create clear navigation for:
+
+- Home
+- Explore Courses
+- Learning Paths
+- Coding Workspace
+- Projects
+- Communities
+- Messages
+- AI Assistant
+- Resources
+- Pricing
+- Notifications
+- Profile
+- Settings
+- Dashboard
+
+Display navigation according to the user's role and permissions.
+
+On desktop, use a professional sidebar or top navigation depending on the module. On mobile, use a responsive navigation drawer or bottom navigation where appropriate.
+
+---
+
+# 5. AUTHENTICATION — EXACT LOGIN AND SIGNUP DESIGN
+
+Use the following authentication design as a specific requirement.
+
+Create a premium dark glassmorphism login and registration experience.
+
+### Background
+
+- Full-page dark background: `#05070A`.
+- Three absolute blurred fluid shapes:
+  1. Top-left blue wave, 600 × 600, blur 120px, color `#0A84FF`, opacity 0.4.
+  2. Bottom-right cyan wave, 800 × 800, blur 150px, color `#00D4FF`, opacity 0.3.
+  3. Center dark-blue wave, 1000 × 1000, blur 200px, color `#102040`, opacity 0.5.
+- Add slow, infinite animation to the waves with approximately 20px horizontal and vertical movement.
+- Add a subtle grain texture overlay.
+- Prevent background effects from interfering with form interactions.
+
+### Card container
+
+Create a centered card with approximately 400px desktop width and responsive mobile sizing.
+
+Use this styling direction:
+
+`relative bg-white/[0.06] backdrop-blur-[24px] border border-white/[0.12] rounded-[24px] p-8 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_20px_80px_rgba(0,0,0,0.5)]`
+
+Use Framer Motion and AnimatePresence with `mode="wait"` to switch between login and signup.
+
+Transition requirements:
+
+- Scale from 0.95 to 1.
+- Subtle rotateY flip.
+- Approximately 0.6-second spring transition.
+- Animate a small cube-style icon with a gradient border when switching modes.
+
+### Header above the card
+
+Display:
+
+**Glassy Login** in white and **Form v3** in orange `#FF6B35`.
+
+Center the heading above the authentication card.
+
+### Login state — Welcome Back
+
+Title:
+
+**Welcome Back**
+
+Subtitle:
+
+Enter your credentials to access your secure BrainCode workspace.
+
+Fields:
+
+1. Email Address with Mail icon.
+2. Password with Lock icon and show/hide password toggle.
+
+Additional controls:
+
+- Remember me checkbox.
+- Forgot password link.
+- Sign In button with right-arrow icon.
+- Divider with the word "or".
+- Google sign-in button.
+- Apple sign-in button.
+- Footer: "Don't have an account? Sign up".
+
+Use a white rounded-full primary button with black text, approximately 44px high.
+
+Google and Apple authentication must use real OAuth configuration when enabled. Do not display a successful social login unless the provider authentication actually succeeds. If a provider is not configured, make its unavailable state clear.
+
+### Signup state — Create Account
+
+Use the same glass card and background.
+
+Fields:
+
+1. Full Name.
+2. Email Address.
+3. Password.
+4. Confirm Password.
+
+Display password and confirm-password fields in a two-column grid on larger screens, but stack them on small mobile screens.
+
+Add:
+
+- I agree to Terms and Privacy Policy checkbox.
+- Create Account button.
+- Footer: "Already have an account? Sign in".
+
+### Input design
+
+Use:
+
+`bg-white/[0.05] border-white/10 rounded-xl h-11 px-4 text-white placeholder:text-white/30 focus:border-white/20 focus:bg-white/[0.08] transition-all`
+
+Include:
+
+- Proper validation.
+- Required-field checks.
+- Email validation.
+- Password strength guidance.
+- Password confirmation validation.
+- Clear error messages.
+- Loading states.
+- Success feedback.
+
+### Authentication functionality
+
+Implement:
+
+- User registration.
+- Login and logout.
+- Secure password hashing through an appropriate authentication solution.
+- Email verification.
+- Forgot-password workflow.
+- Password reset.
+- Session management.
+- Protected routes.
+- Remember-me/session persistence where supported.
+- Role-based access.
+- Account status checks.
+
+After registration, direct the user to profile setup and onboarding.
+
+Never store plain-text passwords.
+
+---
+
+# 6. PUBLIC WEBSITE
+
+Create a professional public-facing website that introduces BCschools and encourages visitors to register.
+
+### Homepage sections
+
+1. Hero section explaining what BCschools is.
+2. Clear headline and call-to-action buttons.
+3. Introduction to the learning ecosystem.
+4. Featured courses and technologies.
+5. Interactive learning and coding section.
+6. AI learning assistant introduction.
+7. Developer communities and collaboration section.
+8. Projects and portfolio showcase.
+9. How the platform works.
+10. Free and premium feature overview.
+11. Pricing section.
+12. Frequently asked questions.
+13. Footer with company information, support, terms and privacy links.
+
+Primary calls to action:
+
+- Start Learning
+- Explore Courses
+- Create Free Account
+
+Do not invent user numbers, testimonials, ratings or revenue statistics. Use editable placeholders until real information is available.
+
+---
+
+# 7. USER REGISTRATION AND ONBOARDING
+
+After successful registration, guide new users through onboarding.
+
+Collect relevant information such as:
+
+- Full name.
+- Profile picture, optional.
+- Username.
+- Learning interests.
+- Current skill level.
+- Learning goals.
+- Preferred technologies.
+- Areas of interest.
+
+Allow users to skip non-essential questions and update their profiles later.
+
+Use onboarding information to personalize the dashboard and course recommendations.
+
+---
+
+# 8. USER DASHBOARD
+
+Create a personalized dashboard for each authenticated user.
+
+The dashboard should include:
+
+### Overview
+
+- Welcome message.
+- Profile summary.
+- Current learning goals.
+- Enrolled courses.
+- Continue Learning section.
+- Learning progress.
+- Recent activities.
+- XP and achievements.
+- Learning streak.
+- Recommended courses.
+- Suggested next steps.
+- Recent projects.
+- Upcoming assignments.
+- Notifications.
+
+### Quick access cards
+
+- My Learning
+- Coding Workspace
+- AI Assistant
+- Communities
+- Messages
+- Projects
+- Learning Progress
+- My Portfolio
+- Technical Resources
+- Subscription and Billing
+
+The dashboard should reflect real user data from the backend, not permanently hardcoded sample statistics.
+
+Include useful empty states for new users who have not enrolled in courses or created projects.
+
+---
+
+# 9. LEARNING AND EDUCATION SYSTEM
+
+This is one of the most important modules.
+
+Build a structured learning platform inspired by the usability of W3Schools and freeCodeCamp, but create an original BCschools experience.
+
+### Course structure
+
+Organize learning content using:
+
+Category → Technology → Learning Path → Course → Module → Topic → Lesson.
+
+Examples of categories and technologies should be manageable by administrators rather than hardcoded permanently.
+
+### Course discovery
+
+Users should be able to:
+
+- Browse categories.
+- Search technologies.
+- Filter courses.
+- Explore learning paths.
+- View course descriptions.
+- View course outlines.
+- See lesson access labels.
+- See difficulty levels.
+- See estimated learning time.
+- View instructor information.
+- Enroll in courses.
+
+### Course outline
+
+Course outlines should be viewable without payment.
+
+Each course should display:
+
+- Course description.
+- Learning objectives.
+- Modules.
+- Topics.
+- Lessons.
+- Access status.
+- Learning resources.
+- Course progress.
+
+### Learning interface
+
+Create a dedicated lesson environment with:
+
+- Left sidebar containing the course curriculum.
+- Main content area.
+- Lesson title and description.
+- Text-based lesson content.
+- Video lesson support.
+- Code examples.
+- Downloadable resources.
+- Interactive practice.
+- Previous and Next lesson navigation.
+- Mark as complete.
+- Bookmark lesson.
+- Ask AI about this lesson.
+- Related resources.
+
+Keep the course curriculum accessible while learning.
+
+### Free and premium learning
+
+- Course outlines: free.
+- Designated free lessons: free.
+- Premium lessons: require the appropriate active entitlement.
+- Premium courses: require the appropriate active entitlement.
+- Clearly identify locked lessons.
+- Show a useful explanation and plan option when a user attempts to access premium content.
+
+Do not block users from viewing the course outline just because some lessons are premium.
+
+### Learning progress
+
+Track:
+
+- Course enrollment.
+- Lessons opened.
+- Lessons completed.
+- Time spent where appropriate.
+- Quiz scores.
+- Assignment results.
+- Course completion.
+- Learning streaks.
+
+---
+
+# 10. CODING AND PRACTICAL DEVELOPMENT WORKSPACE
+
+Create a browser-based coding environment.
+
+This is a major differentiating feature of BCschools.
+
+### Personal workspace
+
+Each user should have an individual workspace.
+
+Include:
+
+- File explorer.
+- Folder creation.
+- File creation and deletion.
+- Code editor.
+- Editor tabs.
+- Syntax highlighting.
+- Code formatting where supported.
+- Run button.
+- Live preview for supported technologies.
+- Console/output area.
+- Error display.
+- Save project.
+- Rename project.
+- Reopen project.
+- Duplicate project.
+- Project organization.
+
+Use a professional developer interface inspired by VS Code without copying its exact branding.
+
+### Practical exercises
+
+Connect the coding workspace to lessons and assignments.
+
+Users should be able to:
+
+1. Open a lesson.
+2. Read the instructions.
+3. Open the exercise.
+4. Write code.
+5. Run the code.
+6. View output.
+7. Fix errors.
+8. Save their work.
+9. Submit the assignment where applicable.
+
+### Code execution security
+
+Do not execute arbitrary user code directly on the main application server.
+
+Use a properly isolated code execution service or sandbox with:
+
+- Execution time limits.
+- Memory limits.
+- CPU limits.
+- Network restrictions.
+- Resource controls.
+- Abuse prevention.
+
+If a secure execution provider is not configured, build the editor and preview functionality that can safely operate locally, and clearly identify unsupported execution modes. Do not falsely claim that a secure remote execution service is operational.
+
+---
+
+# 11. ASSIGNMENTS, QUIZZES AND GAMIFICATION
+
+Build an interactive assessment system.
+
+### Assessment types
+
+Support:
+
+- Multiple-choice questions.
+- True/False.
+- Matching.
+- Ordering.
+- Fill in the blanks.
+- Code completion.
+- Find-the-error challenges.
+- Practical coding assignments.
+- Timed quizzes.
+- Untimed quizzes.
+
+### Gamified learning
+
+Do not make every assessment feel like a traditional examination.
+
+Create engaging activities such as:
+
+- Quick-answer rounds.
+- Matching games.
+- Drag-and-drop activities.
+- Code completion challenges.
+- Find-the-error challenges.
+- Timed coding challenges.
+- Daily learning challenges.
+
+### Gamification system
+
+Include:
+
+- XP points.
+- Badges.
+- Learning levels.
+- Streaks.
+- Achievement history.
+- Leaderboards where appropriate.
+
+### Assessment feedback
+
+After an assessment, display:
+
+- Score.
+- Correct answers.
+- Incorrect answers.
+- Explanations.
+- Areas that need improvement.
+- Recommended lessons.
+- Previous attempts.
+
+Objective questions can be automatically graded. Subjective assignments and project work should support instructor grading.
+
+Prevent obvious abuse of XP and leaderboard systems.
+
+---
+
+# 12. AI LEARNING ASSISTANT
+
+Create an AI-powered learning assistant integrated throughout BCschools.
+
+It should be accessible from the dashboard, learning interface and coding workspace.
+
+### AI capabilities
+
+The assistant should be able to:
+
+- Explain difficult concepts in simpler language.
+- Explain programming code.
+- Help users understand errors.
+- Suggest debugging steps.
+- Give hints before revealing full answers when appropriate.
+- Summarize approved lesson content.
+- Generate practice questions from approved content.
+- Recommend lessons based on learning progress.
+- Help users understand assignments.
+- Guide users through the platform.
+
+### Context-aware AI
+
+Where authorized, the assistant should understand:
+
+- The current course.
+- The current lesson.
+- The user's learning level.
+- The user's current coding context.
+- Relevant progress information.
+
+### AI usage controls
+
+Implement:
+
+- Configurable usage limits.
+- Usage tracking.
+- Error handling.
+- Cost monitoring.
+- Provider configuration through environment variables.
+- Privacy protections.
+
+Do not expose private user data or private course content to an external AI provider without appropriate authorization and safeguards.
+
+AI responses should be presented as assistance, not guaranteed correctness.
+
+### AI platform tutorials
+
+Include a section for AI-generated or administrator-uploaded tutorial videos explaining how to navigate and use BCschools features.
+
+Examples:
+
+- How to create an account.
+- How to enroll in a course.
+- How to use the coding workspace.
+- How to join a community.
+- How to create a project.
+- How to use the AI assistant.
+- How to manage a subscription.
+
+The platform should provide the interface and content-management capability for these tutorials. Do not pretend that video generation is available unless an actual video-generation service is integrated.
+
+---
+
+# 13. COMMUNITY AND SOCIAL NETWORKING
+
+Create a professional technology community environment.
+
+### User profiles
+
+Each profile should support:
+
+- Name.
+- Username.
+- Profile picture.
+- Biography.
+- Skills.
+- Interests.
+- Learning activity.
+- Projects.
+- Portfolio.
+- Community memberships.
+- Public profile visibility settings.
+
+### Social connections
+
+Users should be able to:
+
+- Discover other users.
+- Follow or connect with users.
+- Send connection requests.
+- Accept or reject requests.
+- View public profiles.
+- Share approved projects.
+- Interact with community posts.
+
+### Communities
+
+Users should be able to:
+
+- Discover communities.
+- Search communities.
+- Browse categories.
+- View community descriptions.
+- Join eligible communities.
+- Leave communities.
+- Participate in discussions.
+- Create posts.
+- Comment.
+- React to posts.
+- Share learning resources.
+
+Support:
+
+- Public communities.
+- Private communities.
+- Approval-based communities.
+
+### Community creation rule
+
+Joining and participating in eligible existing communities must remain free.
+
+Creating a new community requires an active premium entitlement.
+
+When a free user selects Create Community:
+
+1. Check the user's entitlement on the backend.
+2. If the entitlement is missing, display the premium plans.
+3. After verified payment and entitlement activation, allow community creation.
+4. Open the community creation form.
+5. Allow the owner to configure name, description, category, privacy and community rules.
+6. Create the community.
+7. Assign the creator as owner.
+8. Allow the owner to assign moderators and manage membership.
+
+### Community moderation
+
+Include:
+
+- Owner controls.
+- Moderator permissions.
+- Member management.
+- Post removal.
+- Reporting.
+- Blocking.
+- Spam prevention.
+- Moderation history.
+
+---
+
+# 14. PRIVATE MESSAGING AND NOTIFICATIONS
+
+Build a private messaging system.
+
+### Messaging
+
+Include:
+
+- One-to-one conversations.
+- Conversation list.
+- Message history.
+- Text messages.
+- File attachments where supported.
+- Message timestamps.
+- Read/unread states.
+- Typing indicators where supported.
+- User blocking.
+- Reporting.
+- Privacy settings.
+
+Use authenticated real-time communication where available.
+
+### Notifications
+
+Create a unified notification service.
+
+Notify users about:
+
+- New messages.
+- Connection requests.
+- Community activity.
+- Assignment deadlines.
+- Assignment feedback.
+- Course progress.
+- Learning achievements.
+- Payment confirmation.
+- Failed or pending payments.
+- Subscription renewals.
+- Subscription expiry.
+- Platform announcements.
+
+Include notification preferences and read/unread management.
+
+---
+
+# 15. COLLABORATIVE CODING WORKSPACE
+
+Create a premium collaborative development environment.
+
+Each user already has an individual workspace. This module should allow authorized users to collaborate with others in a shared environment.
+
+### Features
+
+- Create a collaboration session.
+- Invite other users.
+- Join a session.
+- Shared code editor.
+- Live synchronized editing.
+- Visible participant presence.
+- Shared files.
+- Project history.
+- Owner, editor and viewer permissions.
+- Session chat.
+- Voice communication.
+- Video communication.
+- Screen sharing where supported.
+- Participant management.
+- Session exit and closure.
+- Save shared output as a project.
+- Record project ownership and contributor information.
+
+### Access rule
+
+Advanced collaborative coding sessions require a premium entitlement.
+
+The system must check the entitlement on the backend before allowing the user to create or access a protected session.
+
+Joining a session should also respect the session owner's permissions and the applicable platform policy.
+
+### Important
+
+Real-time synchronization, voice, video and screen sharing require appropriate services and integrations.
+
+Create modular service interfaces and integration points. Do not build fake controls that imply these services work when they are not configured.
+
+The limits for participants, storage, duration and advanced features must be configurable through the subscription system.
+
+---
+
+# 16. PROJECTS AND DEVELOPER PORTFOLIO
+
+Users should be able to build and showcase their work.
+
+### Project management
+
+Allow users to:
+
+- Create projects.
+- Save projects.
+- Edit project descriptions.
+- Upload project images.
+- Add screenshots.
+- Add relevant links.
+- Organize projects.
+- Publish projects.
+- Keep projects private.
+- Share projects publicly where permitted.
+
+### Portfolio
+
+Create a professional portfolio page for each user.
+
+Include:
+
+- Profile information.
+- Skills.
+- Completed courses.
+- Projects.
+- Achievements.
+- Learning milestones.
+- External links.
+- Public/private visibility controls.
+
+Do not automatically publish private work.
+
+Portfolio and project ownership must be verified by the backend.
+
+---
+
+# 17. TECHNICAL RESOURCES AND DOCUMENTATION
+
+Build a searchable technical resource library.
+
+Include:
+
+- Programming documentation.
+- Guides.
+- Code examples.
+- Learning references.
+- Downloadable resources.
+- Platform help articles.
+- Tutorials.
+- Video walkthroughs.
+
+Allow authorized content administrators to create, update, categorize, publish and archive resources.
+
+---
+
+# 18. SUBSCRIPTIONS, PAYMENTS AND PREMIUM ACCESS
+
+This is a critical part of the platform.
+
+Implement a centralized subscription and entitlement architecture.
+
+The application must support:
+
+- Free users.
+- Premium users.
+- Monthly subscriptions.
+- Yearly subscriptions.
+- Configurable pricing.
+- Configurable plan features.
+- Payment history.
+- Subscription status.
+- Receipts.
+- Renewal notifications.
+- Cancellation.
+- Expiry.
+- Refunds and disputes.
+
+Do not invent final prices or hardcode them into the frontend.
+
+Prices, currency, billing interval, promotions and feature limits must be configurable by authorized administrators.
+
+### Initial access policy
+
+| Feature | Free access | Premium access |
+|---|---|---|
+| Registration | Yes | Yes |
+| Basic profile | Yes | Yes |
+| Course catalogue | Yes | Yes |
+| Course outlines | Yes | Yes |
+| Designated free lessons | Yes | Yes |
+| Premium lessons | No | Yes, if included |
+| Premium courses | No | Yes, if included |
+| Basic quizzes | Yes, where included | Yes |
+| Basic personal workspace | Yes | Yes |
+| Joining eligible communities | Yes | Yes |
+| Creating communities | No | Yes |
+| Basic messaging | Yes, subject to controls | Yes |
+| Advanced collaborative coding | No | Yes |
+| Portfolio management | Yes | Yes |
+| Advanced features | According to configured policy | According to configured plan |
+
+The backend must enforce these rules. Hiding a button in the frontend is not sufficient.
+
+### Payment architecture
+
+Create these services:
+
+1. Plan catalogue.
+2. Pricing configuration.
+3. Checkout service.
+4. Payment provider adapter.
+5. Webhook receiver.
+6. Payment verification service.
+7. Payment transaction ledger.
+8. Subscription manager.
+9. Entitlement service.
+10. Receipt and notification service.
+11. Finance administration.
+
+### Payment flow
+
+Implement this exact logical sequence:
+
+1. User selects a premium feature.
+2. Backend checks whether the required entitlement already exists.
+3. If access is missing, display available plans.
+4. User selects monthly or yearly billing.
+5. Backend creates a unique payment order/reference.
+6. User proceeds to the configured payment provider.
+7. Provider processes the payment.
+8. Provider redirects the user and sends its trusted server notification/webhook.
+9. Backend verifies the transaction using the provider's trusted verification mechanism.
+10. Validate the transaction reference, amount, currency, merchant account and final status.
+11. Record the transaction idempotently.
+12. Activate or update the subscription.
+13. Grant the relevant entitlements.
+14. Send the receipt and confirmation notification.
+15. Allow the user to retry the original premium action.
+
+### Critical payment security rule
+
+**Never activate premium access merely because a user reaches a payment-success page.**
+
+Premium access must only be granted after trusted server-side payment verification.
+
+### Payment statuses
+
+Support:
+
+- Created.
+- Pending.
+- Successful.
+- Failed.
+- Cancelled.
+- Refunded.
+- Disputed/Chargeback.
+- Expired.
+
+Expected behavior:
+
+- Created: payment order exists; no premium access.
+- Pending: await provider confirmation; no premium access.
+- Successful: verified payment; update subscription and entitlements.
+- Failed: keep premium locked and allow safe retry.
+- Cancelled: keep premium locked and retain the transaction record.
+- Refunded: apply configured refund policy.
+- Disputed: flag for finance review and apply policy.
+- Expired: revoke time-limited entitlements unless another valid access source exists.
+
+### Subscription lifecycle
+
+Plan selected → Checkout created → Payment verification → Subscription activated → Entitlements granted → Renewal monitoring → Renewed or expired.
+
+Support cancellation requests, renewal reminders, failed renewals, configurable grace periods and expiry handling.
+
+### Provider independence
+
+No payment gateway has been selected in this blueprint.
+
+Build a provider-independent adapter so the selected payment gateway can be connected later without rewriting the learning, community or collaboration modules.
+
+Do not invent gateway credentials or claim a live gateway is connected when it is not.
+
+Never store raw card numbers, CVV or other sensitive card information on BCschools servers.
+
+---
+
+# 19. CENTRALIZED ENTITLEMENT AND PERMISSION SYSTEM
+
+Build one central authorization and entitlement service.
+
+Every protected module must call this service.
+
+It should check:
+
+1. Is the user authenticated?
+2. Is the account active?
+3. Does the user have the required role?
+4. Does the user have permission to access this specific resource?
+5. Is the feature free?
+6. If premium, does the user have an active entitlement?
+7. Is the entitlement within its validity period?
+
+Example entitlement keys:
+
+- `premium_course_access`
+- `premium_lesson_access`
+- `community_create`
+- `collaborative_workspace_access`
+- `advanced_workspace_features`
+
+Each entitlement should record:
+
+- User.
+- Feature.
+- Source.
+- Status.
+- Start date.
+- End date.
+- Granting record.
+- Audit history.
+
+An entitlement may come from a subscription, promotion, scholarship, administrator-approved access or future institutional plan.
+
+Do not tie every premium feature directly to one subscription status. Separate subscription records from feature entitlements.
+
+---
+
+# 20. ROLES AND ADMINISTRATION
+
+Create separate role-based interfaces.
+
+### Roles
+
+1. Visitor.
+2. Free User.
+3. Premium User.
+4. Instructor/Mentor.
+5. Content Administrator.
+6. Community Moderator.
+7. Support Administrator.
+8. Finance/Subscription Administrator.
+9. Analytics/Operations Administrator.
+10. Super Administrator.
+
+### Super Admin dashboard
+
+Create a dedicated, protected administrative portal.
+
+Include:
+
+- Overview dashboard.
+- User management.
+- Roles and permissions.
+- Course management.
+- Category management.
+- Technology management.
+- Lesson management.
+- Content publishing.
+- Community management.
+- Moderation.
+- Subscription management.
+- Payment monitoring.
+- Refund management.
+- Revenue reporting.
+- Notifications.
+- Platform announcements.
+- System settings.
+- Audit logs.
+- Integration configuration.
+- Analytics and reports.
+
+### Instructor dashboard
+
+Instructors should be able to:
+
+- Manage authorized courses.
+- Create lessons.
+- Upload learning resources.
+- Create assignments.
+- Create quizzes.
+- Review submissions.
+- Grade assignments.
+- Provide feedback.
+- Track learners.
+- Manage learning materials.
+
+### Finance dashboard
+
+Authorized finance staff should be able to:
+
+- View transactions.
+- Search payment references.
+- Monitor successful and failed payments.
+- View pending transactions.
+- Review subscriptions.
+- View refunds.
+- Reconcile payments.
+- Monitor renewals.
+- Generate financial reports.
+
+Refunds and sensitive financial actions must require the correct permission and produce audit records.
+
+### Admin security
+
+Administrative actions must be role-restricted and audited.
+
+Use stronger authentication controls for privileged accounts where supported.
+
+Do not expose administrative functionality to ordinary users.
+
+---
+
+# 21. DATABASE ARCHITECTURE
+
+Create a properly structured relational data model or adapt the existing project's database architecture if one is already configured.
+
+The logical data model must cover the following entities.
+
+### Identity
+
+- User
+- Profile
+- Role
+- Permission
+- UserRole
+- Session
+- VerificationToken
+- AccountStatus
+
+### Learning
+
+- Category
+- Technology
+- LearningPath
+- Course
+- CourseModule
+- Lesson
+- LessonResource
+- Enrollment
+- LessonProgress
+- Bookmark
+
+### Assessment
+
+- QuestionBank
+- Question
+- Quiz
+- QuizAttempt
+- Answer
+- Assignment
+- Submission
+- Grade
+- Feedback
+
+### Gamification
+
+- XPTransaction
+- Badge
+- UserBadge
+- Streak
+- Challenge
+- LeaderboardSnapshot
+
+### Development
+
+- Workspace
+- Project
+- ProjectFile
+- CodeRun
+- ExecutionResult
+- ProjectVersion
+- ProjectSubmission
+
+### AI
+
+- AIConversation
+- AIMessage
+- AIUsageRecord
+- Recommendation
+- PromptTemplate
+- ProviderLog
+
+### Social
+
+- Connection
+- Message
+- Conversation
+- Community
+- CommunityMember
+- CommunityPost
+- Comment
+- Reaction
+- Report
+- ModerationAction
+
+### Collaboration
+
+- CollaborationSession
+- SessionParticipant
+- SessionRole
+- SharedDocument
+- PresenceEvent
+- SessionMessage
+- SessionRecordingMetadata, if recording is later enabled.
+
+### Portfolio
+
+- PortfolioProject
+- Skill
+- UserSkill
+- CertificateRecord, if certificates are approved
+- ExternalLink
+- VisibilitySetting
+
+### Commerce
+
+- Plan
+- PlanFeature
+- Price
+- PaymentOrder
+- PaymentTransaction
+- Subscription
+- Entitlement
+- Invoice/Receipt
+- Refund
+- WebhookEvent
+
+### Platform
+
+- Notification
+- NotificationPreference
+- FileAsset
+- AuditLog
+- SupportTicket
+- Announcement
+- SystemSetting
+
+### Data design rules
+
+- Use stable unique identifiers.
+- Define relationships and foreign keys.
+- Add appropriate indexes.
+- Use pagination for high-volume data.
+- Store timestamps consistently.
+- Display dates in the user's local timezone.
+- Keep payment ledger records separate from subscription status.
+- Keep file binaries in object storage and metadata in the database.
+- Define retention and deletion rules for messages, files, recordings and logs.
+- Record entitlement sources and expiry information.
+- Include database migrations and seed data where appropriate.
+
+Do not put all application data into one large unstructured JSON object.
+
+---
+
+# 22. SECURITY, PRIVACY AND RELIABILITY
+
+Implement a security-conscious application.
+
+### Security
+
+- Secure authentication.
+- Password hashing.
+- Role-based access control.
+- Resource-level authorization.
+- Server-side input validation.
+- Rate limiting.
+- Abuse detection.
+- Secure session handling.
+- Protection against common web vulnerabilities.
+- Safe file uploads.
+- Environment-based secrets management.
+- Payment webhook signature verification.
+- Idempotent payment processing.
+- Sandboxed code execution.
+- Audit logs for sensitive operations.
+
+### Privacy
+
+- Clear privacy and terms pages.
+- User profile visibility controls.
+- Private project defaults.
+- Private messaging protection.
+- Appropriate consent for recording and screen sharing.
+- Appropriate controls for external AI services.
+- Data deletion and retention policies.
+
+### Reliability
+
+- Database backups.
+- Tested recovery procedures.
+- Application error monitoring.
+- Payment webhook monitoring.
+- Retry handling for external service failures.
+- Background processing for appropriate tasks.
+- Graceful handling of pending payments and provider outages.
+
+---
+
+# 23. INTEGRATIONS AND EXTERNAL SERVICES
+
+Keep external integrations modular and replaceable.
+
+The architecture should support:
+
+- Payment gateway.
+- AI model provider.
+- Email/SMS provider.
+- Real-time messaging service.
+- Voice/video provider.
+- Code execution service.
+- Object/file storage.
+- Analytics and monitoring.
+
+Do not assume any particular provider has been selected.
+
+Use environment variables and adapter interfaces.
+
+Create an `.env.example` file showing all required configuration variables, without real secrets.
+
+Create documentation explaining how to configure each external service.
+
+---
+
+# 24. REQUIRED USER FLOWS
+
+Implement and test these end-to-end journeys.
+
+### Flow A: New user
+
+Visitor → Public website → Sign up → Email verification → Profile setup → Select interests → Dashboard.
+
+### Flow B: Existing user
+
+Login → Authentication → Role and account validation → Dashboard.
+
+### Flow C: Free learning
+
+Dashboard → Explore courses → Open course outline → Select free lesson → Learn → Practise → Complete activity → Update progress → Recommend next lesson.
+
+### Flow D: Premium course
+
+Open premium lesson → Backend entitlement check → Show plans if not entitled → Select plan → Checkout → Provider verification → Subscription activation → Entitlement granted → Open premium lesson.
+
+### Flow E: Community participation
+
+Dashboard → Explore communities → Open community → Join if eligible → Participate in posts and discussions.
+
+### Flow F: Community creation
+
+Select Create Community → Check entitlement → If missing, show premium plans → Verified payment → Grant entitlement → Create community → Assign owner → Manage members.
+
+### Flow G: Collaborative coding
+
+Select Collaborate → Check entitlement → Create session → Select project → Invite collaborators → Assign permissions → Join shared workspace → Live collaboration → Save project and contributor history.
+
+### Flow H: AI assistance
+
+Open lesson or coding workspace → Ask AI → Supply authorized context → Generate assistance → Display response → Track permitted usage.
+
+### Flow I: Assignment
+
+Instructor creates assignment → Publishes to course → Learner opens brief → Practises in workspace → Submits project → Automatic checks or instructor review → Feedback and score → Progress update.
+
+### Flow J: Subscription management
+
+Select plan → Checkout → Payment verification → Subscription active → Entitlements granted → Renewal monitoring → Renew, cancel or expire according to policy.
+
+### Flow K: Instructor operations
+
+Instructor login → Instructor dashboard → Create course content → Add lessons and resources → Configure free/premium access → Submit for review → Publish after authorization.
+
+### Flow L: Administration
+
+Admin login → Role verification → Admin dashboard → Manage users/content/finance/settings → Record audit events.
+
+---
+
+# 25. RESPONSIVE DESIGN REQUIREMENTS
+
+The application must work properly on:
+
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Mobile phones.
+
+The coding and collaborative development environments should be desktop-optimized because of their advanced interfaces, but they must still have useful responsive behavior on smaller devices.
+
+Do not simply shrink the desktop layout to fit mobile.
+
+Use appropriate mobile navigation, responsive cards, stacked forms and mobile-friendly content layouts.
+
+---
+
+# 26. IMPLEMENTATION PLAN
+
+This is a large platform. Build it in organized phases within the same project.
+
+Do not attempt to generate every complex feature in one uncontrolled operation if doing so will compromise functionality.
+
+Maintain one coherent application and shared architecture throughout all phases.
+
+### Phase 1 — Platform foundation
+
+Build:
+
+- Application structure.
+- Design system.
+- Public homepage.
+- Login and signup.
+- Authentication.
+- Email verification structure.
+- Password reset.
+- User profiles.
+- Onboarding.
+- Main dashboard.
+- Navigation.
+- Role and permission foundation.
+- Database foundation.
+- Admin foundation.
+
+**Completion requirement:** A user must be able to register, sign in, complete onboarding, manage a profile and access the correct dashboard.
+
+### Phase 2 — Learning engine
+
+Build:
+
+- Categories.
+- Technologies.
+- Courses.
+- Learning paths.
+- Modules.
+- Lessons.
+- Course outlines.
+- Free/premium lesson classification.
+- Enrollment.
+- Progress tracking.
+- Instructor content management.
+
+**Completion requirement:** An authorized content administrator can create and publish learning content, and learners can access the appropriate lessons.
+
+### Phase 3 — Coding and assessment
+
+Build:
+
+- Personal coding workspace.
+- File management.
+- Editor.
+- Safe preview/execution integration.
+- Assignments.
+- Quizzes.
+- Scoring.
+- Feedback.
+- XP.
+- Badges.
+- Streaks.
+
+**Completion requirement:** A learner can practise, save work, submit assignments and receive results.
+
+### Phase 4 — AI assistance
+
+Build:
+
+- AI assistant interface.
+- Lesson-aware assistance.
+- Code explanations.
+- Debugging assistance.
+- Recommendations.
+- Usage tracking.
+- Configuration.
+
+**Completion requirement:** The AI integration works with a configured provider and appropriate usage and privacy controls.
+
+### Phase 5 — Social and communities
+
+Build:
+
+- User discovery.
+- Connections.
+- Profiles.
+- Community discovery.
+- Community joining.
+- Community creation interface.
+- Posts.
+- Comments.
+- Reactions.
+- Moderation.
+- Private messaging.
+
+**Completion requirement:** Users can connect, communicate and participate in communities with the correct permissions.
+
+### Phase 6 — Payments and subscriptions
+
+Build:
+
+- Plan catalogue.
+- Configurable pricing.
+- Checkout service.
+- Payment adapter.
+- Webhook processing.
+- Server-side verification.
+- Subscription lifecycle.
+- Entitlement service.
+- Receipts.
+- Finance dashboard.
+
+**Completion requirement:** Verified payments activate the correct subscription and entitlements. Pending, failed and expired transactions never accidentally unlock premium access.
+
+### Phase 7 — Collaborative workspace
+
+Build:
+
+- Collaboration sessions.
+- Shared editor.
+- Participant management.
+- Live synchronization.
+- Session permissions.
+- Chat.
+- Voice/video integration.
+- Screen sharing integration.
+- Project history.
+
+**Completion requirement:** Authorized users can collaborate through configured real-time services.
+
+### Phase 8 — Portfolio and growth
+
+Build:
+
+- Portfolio pages.
+- Project showcase.
+- Skills.
+- Achievements.
+- Advanced progress analytics.
+- Public/private project controls.
+
+### Phase 9 — Final hardening and launch preparation
+
+Complete:
+
+- Security review.
+- Permission testing.
+- Payment testing.
+- Performance improvements.
+- Responsive testing.
+- Error handling.
+- Database backup documentation.
+- Monitoring.
+- Deployment documentation.
+- Production configuration checklist.
+
+---
+
+# 27. TESTING AND ACCEPTANCE CRITERIA
+
+Do not consider a module complete simply because its screen looks correct.
+
+Test its actual functionality.
+
+At minimum, test:
+
+### Authentication
+
+- Successful registration.
+- Duplicate email rejection.
+- Invalid email rejection.
+- Incorrect password.
+- Password reset.
+- Logout.
+- Protected routes.
+
+### Permissions
+
+- Free user attempting to open premium lessons.
+- Free user attempting to create a community.
+- Free user attempting to create a premium collaboration session.
+- Premium user with valid entitlement.
+- Expired subscription.
+- Unauthorized administrative access.
+
+### Payments
+
+- Payment order creation.
+- Pending payment.
+- Verified successful payment.
+- Failed payment.
+- Cancelled payment.
+- Duplicate webhook.
+- Invalid webhook signature.
+- Refund.
+- Expired subscription.
+- Entitlement revocation.
+
+### Learning
+
+- Course creation.
+- Course publishing.
+- Lesson access.
+- Lesson completion.
+- Quiz submission.
+- Assignment submission.
+- Progress updates.
+
+### Social and collaboration
+
+- Community joining.
+- Community creation permissions.
+- Message permissions.
+- User blocking and reporting.
+- Collaboration session permissions.
+- Project ownership.
+
+### General quality
+
+- Responsive behavior.
+- Loading states.
+- Empty states.
+- Error states.
+- Form validation.
+- Navigation.
+- Accessibility basics.
+
+Create appropriate automated tests for critical backend logic, particularly authentication, payment verification, subscription handling and entitlement checks.
+
+---
+
+# 28. REQUIRED PROJECT DELIVERABLES
+
+Build and maintain:
+
+1. Complete source code.
+2. Responsive public website.
+3. Authentication system.
+4. Learner dashboard.
+5. Learning management system.
+6. Coding workspace.
+7. Assessment and gamification.
+8. AI assistant interface and integration structure.
+9. Community and social system.
+10. Messaging system.
+11. Collaborative workspace.
+12. Projects and portfolio.
+13. Subscription and payment architecture.
+14. Centralized entitlement service.
+15. Instructor dashboard.
+16. Super-admin dashboard.
+17. Database schema and migrations.
+18. API endpoints and service modules.
+19. `.env.example`.
+20. README and setup instructions.
+21. Deployment instructions.
+22. Integration configuration documentation.
+23. Testing documentation.
+
+Create a clear folder structure and keep modules organized.
+
+---
+
+# 29. IMPORTANT DEVELOPMENT INSTRUCTIONS
+
+Follow these rules throughout implementation:
+
+**1. Build the real product, not just the appearance.**
+
+Every important button, form, navigation item and action must work or be clearly identified as not yet integrated.
+
+**2. Do not create disconnected modules.**
+
+Learning, coding, assessment, AI, communities, collaboration, payments and progress must share the appropriate user, project and learning records.
+
+**3. Do not fake payment success.**
+
+Payment verification must happen on the backend before premium access is granted.
+
+**4. Do not fake integrations.**
+
+If an external service needs credentials, create its integration structure and document what is required.
+
+**5. Do not invent prices.**
+
+Make plans and pricing configurable through administration.
+
+**6. Do not compromise security.**
+
+Sensitive operations must be validated on the server.
+
+**7. Do not destroy existing working code.**
+
+Inspect the existing project before making major changes.
+
+**8. Keep the product renameable.**
+
+BCschools is a working name. Avoid scattering the product name across hardcoded configuration.
+
+**9. Do not stop after the first dashboard.**
+
+The dashboard is only one part of the ecosystem.
+
+**10. Maintain a development record.**
+
+Create or update a `BUILD_STATUS.md` file showing:
+- Completed modules.
+- Partially completed modules.
+- Pending modules.
+- Integrations requiring credentials.
+- Known limitations.
+- Tests performed.
+- Next implementation tasks.
+
+**11. Avoid fake production data.**
+
+Use clearly identified development seed data only where necessary. Make sure real database records drive the production application.
+
+**12. Keep the application runnable.**
+
+After each major phase, verify that the project builds, starts and that existing functionality still works.
+
+---
+
+# 30. START BUILDING NOW
+
+Start by inspecting the project environment and establishing the application foundation.
+
+Then implement the platform in the phases above.
+
+Do not respond with only an architecture explanation, a proposed plan or a list of recommendations.
+
+I want you to make actual code changes and build the application.
+
+If you encounter a decision that has not yet been made, such as payment provider, final pricing, collaboration limits or external service credentials:
+
+- Do not invent the answer.
+- Make the relevant configuration adjustable.
+- Build the provider-independent structure.
+- Document what must be supplied later.
+- Continue implementing the parts that can be completed.
+
+At the end of each implementation stage, report:
+
+1. What you built.
+2. What is functional.
+3. What still requires integration or configuration.
+4. Any errors or limitations.
+5. What you will implement next.
+
+**Final objective: Deliver a unified, functional, secure and scalable BCschools digital learning and technology ecosystem under BrainCode Technology Limited.**
